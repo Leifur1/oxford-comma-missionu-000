@@ -13,12 +13,13 @@
 #     puts array.join(", ") + ", and " + word # add the word to the end
 #   end
 # end
-  case array.length 
+def oxford_comma(array)
+  case array.length
 when 1
   "#{array[0]}"
 when 2
   array[0..1].join(" and ")
-else 
+else
   array[0...-1].join(", ") << ", and #{array[-1]}"
-end 
+end
 end
