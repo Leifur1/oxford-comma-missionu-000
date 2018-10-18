@@ -3,3 +3,4 @@ def oxford_comma(array)
   when 1
 
   end
+end
